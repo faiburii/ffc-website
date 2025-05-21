@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FFC WEBSITE</title>
+  
+  
+  <style>
+
+    
+    @keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeSlideIn 1.5s ease-out forwards;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background: rgba(4, 2, 26, 0.7);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+    
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 50px;
+      margin-right: 500px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-family: arial;
+      text-decoration: none;
+
+    }
+
+    .nav-links a:hover {
+      color: #7ecbff;
+      
+    }
+
+    .nav-links a:active{
+      color: #5541db;
+    }
+
+    
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    p{
+        font-size: 15px;
+        font-family:arial;
+        color: white;
+    }
+
+    
+
+    .gradient-text {
+        background: linear-gradient(to right, #fdf8ff, #2600ff);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       text-shadow: none; /* Optional: remove shadow to make gradient clearer */
+}
+
+    #home {
+      background: url('bg1.png') no-repeat center center fixed;
+      background-size: cover;
+
+    }
+
+    #about {
+      background: url('deepsea.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    #product {
+      background-size: cover;
+      background: url('bg1.png') no-repeat center center fixed;
+      color: rgb(255, 255, 255);
+      text-shadow: none;
+
+    }
+
+    #product {
+      background-size: cover;
+    }
+
+    #features {
+      background: url('bg2.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+    #features {
+      background: url('bg2.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    #video {
+      background: url('deepwater.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    #faqs {
+      background: url('bg1.png') no-repeat center center fixed;
+      background-size: cover;
+      text-shadow: none;
+    }
+
+    #contacts {
+      background: url('seawate.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      font-size: 10px;
+      padding: 10px;
+    }
+
+    section::before {
+      content: "";
+      display: block;
+      height: 60px;
+      margin-top: -60px;
+      visibility: hidden;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="ctu.png" alt="Logo" />
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#product">Product</a>
+      <a href="#features">Features</a>
+      <a href="#video">Video</a>
+      <a href="faqs.html"class="active">FAQS</a>
+      <a href="#contacts">Contacts</a>
+    </div>
+  </div>
+
+  <!-- Parallax Sections -->
+ <section id="home">
+  <div class="fade-in" 
+  style="
+  position: absolute; 
+  top: 100px; left: 60px; 
+  color: rgb(58, 212, 255);">
+    <h1 class="gradient-text" 
+    style="font-size: 50px; font-family: poppins; margin-top: 100px;">
+      Fish Farm Cleaner <br> With Remote Control System
+    </h1>
+    <br>
+    <p>
+     Keep your pond pristine with our remote controlled surface-cleaning device — engineered <br>
+     specifically for stagnant or low-flow water bodies. <br>
+     This eco-friendly system gently skims floating debris like leaves,  <br>
+     plastic, and organic waste using a stable dual-pontoon design and an efficient net collection system.
+    </p>
+
+    <br>
+
+
+  </div>
+
+  <div class="fade-in" style="text-align: right; width: 100%;">
+    <img src="iso.png" alt="Fish Farm Cleaner ISO Certification"
+         style="
+         max-width: 50%; 
+         height: auto; 
+         border-radius: 10px; 
+         margin-left: 700px;" />
+  </div>
+</section>
+
+
+  <section id="about">
+  <div style="text-align: center; padding: 20px;">
+    <h2>Introduction</h2>
+    <br>
+    <p style="
+    font-size: 20px; 
+    font-family: Arial; 
+    max-width: 800px; 
+    margin: 0 auto;">
+      The Fish Farm Cleaner with Remote Control System is an innovative solution designed to enhance the sustainability of aquaculture environments. 
+      It efficiently collects waste and debris in fish farms, helping maintain water quality and improve aquatic health. 
+      This system aims to reduce manual labor while promoting eco-friendly practices in fish farming operations.
+    </p>
+
+    <br>
+
+    <h3>The Team</h3>
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 20px;">
+      <img src="topee.png" alt="Team Member 1" style="width: 150px; height: 150px; border-radius: 40%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+      <img src="lime.jfif" alt="Team Member 2" style="width: 150px; height: 150px; border-radius: 40%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+      <img src="jhyy.jpg" alt="Team Member 3" style="width: 150px; height: 150px; border-radius: 40%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+      <img src="cyy.jfif" alt="Team Member 4" style="width: 150px; height: 150px; border-radius: 40%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+      <img src="terenss.jfif" alt="Team Member 5" style="width: 150px; height: 150px; border-radius: 40%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+    </div>
+  </div>
+</section>
+
+
+  <section id="product">
+  <div style="display: flex; justify-content: center; align-items: center; width: 100%; padding: 40px;">
+
+    <!-- Left side: Image -->
+    <div style="flex: 1; display: flex; justify-content: center;">
+      <img src="ffc.png" alt="Fish Farm Cleaner Product" 
+           style="max-width: 90%; 
+           height: auto; 
+           border-radius: 50px; 
+           background-color:rgb(21, 21, 71); ">
+   </div>
+    
+    <!-- Right side: Product Overview Text -->
+    <div style="flex: 1; text-align: left; padding-left: 40px;">
+      <h2 style="font-size: 36px; color: rgb(255, 255, 255); font-family: Arial;">PRODUCT OVERVIEW</h2>
+
+      <p style="font-size: 15px; color: rgb(255, 255, 255); max-width: 500px; margin-top: 20px; ">
+        The Fish Farm Cleaner is a remotely operated solution engineered <br>
+        to maintain cleanliness in aquaculture environments. <br>
+        With durable components and a user-friendly interface, 
+         it removes waste materials efficiently—supporting 
+         healthier aquatic life and reducing manual cleaning efforts. 
+
+         <br>
+         <br>
+
+         Key design elements include:  <br>
+         > Dual side pontoons for stability in flowing water.  <br>
+         > Rotating waste collection mechanism with a front-mounted rake for capturing floating debris.  <br>
+         > Rear conveyor system (mesh structure) designed to transport collected waste into onboard storage compartments.  <br>
+         >Lightweight and modular structure for easy deployment and maintenance.</p>
+        
+      </div>
+
+  </div>
+</section>
+
+
+<section id="product">
+  
+
+
+
+  
+</section>
+
+
+ <section id="features">
+  <div style="text-align: center; padding: 60px;">
+    <h2 style="font-size: 40px; color: white; font-family: Arial;">FEATURES</h2>
+    <br> 
+    <br>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+      <img src="remote.jpg" alt="Feature Image 1" 
+           style="max-width: 10%; height: 20%; width:40%;">
+      <img src="feat.png" alt="Feature Image 1" 
+           style="max-width: 30%; height: 50%; width: 30%;">
+      <img src="components.png" alt="Feature Image 1" 
+           style="max-width: 30%; height: 50%; width: 30%;">  
+    </div>
+</section>
+
+<section id="features">
+  <div style="text-align: center; padding: 60px;">
+    <h2 style="font-size: 40px; color: white; font-family: Arial;">VIEWS</h2>
+    <br>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+      <img src="top.png" alt="Feature Image 1" 
+           style="max-width: 20%; height: auto; width: 30%;">
+      <img src="front.png" alt="Feature Image 1" 
+           style="max-width: 30%; height: 50%; width: 30%;">
+      <img src="side.png" alt="Feature Image 1" 
+           style="max-width: 30%; height: 50%; width: 30%;">  
+    </div>
+</section>
+
+
+ <section id="video">
+  <div style="text-align: center; padding: 40px;">
+    <h2 style="font-size: 40px; color: white; font-family: Arial;">Project Demonstration</h2>
+    <br>
+    <video autoplay muted loop controls style="max-width: 70%; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.6);">
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+
+  <section id="contacts">Contacts Section</section>
+
+
+  <div class="footer">
+    © 2025 Cebu Technological University. BSGD 3-B. FISH FARM CLEANER WITH REMOTE CONTROL SYSTEM. All Rights Received.
+  </div>
+
+
+    <script>
+  let prevScrollPos = window.pageYOffset;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+      // Scrolling up
+      navbar.classList.remove('hide');
+    } else {
+      // Scrolling down
+      navbar.classList.add('hide');
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+
+
+</body>
+</html>

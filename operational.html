@@ -7,6 +7,47 @@
 
   <style>
 
+    .navbar {
+      background: rgba(4, 2, 26, 0.7);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+    
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 50px;
+      margin-right: 500px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-family: arial;
+      text-decoration: none;
+
+    }
+
+    .nav-links a:hover {
+      color: #7ecbff;
+      
+    }
+
+    .nav-links a:active{
+      color: #5541db;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -100,6 +141,21 @@
   </style>
 </head>
 <body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="ctu.png" alt="Logo" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html"class="active">Home</a>
+      <a href="index.html">About</a>
+      <a href="index.html">Product</a>
+      <a href="index.html">Features</a>
+      <a href="index.html">Video</a>
+      <a href="faqs.html"class="active">FAQS</a>
+      <a href="index.html">Contacts</a>
+    </div>
+  </div>
 
   <div class="header">
     <div class="header-text">

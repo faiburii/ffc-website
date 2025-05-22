@@ -107,7 +107,7 @@
         background: linear-gradient(to right, #fdf8ff, #2600ff);
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
-       text-shadow: none; /* Optional: remove shadow to make gradient clearer */
+       text-shadow: none; 
 }
 
     #home {
@@ -190,11 +190,11 @@
       <a href="#features">Features</a>
       <a href="#video">Video</a>
       <a href="faqs.html"class="active">FAQS</a>
-      <a href="#contacts">Contacts</a>
+      <a href="contact.html">Contacts</a>
     </div>
   </div>
 
-  <!-- Parallax Sections -->
+ 
  <section id="home">
   <div class="fade-in" 
   style="
@@ -261,7 +261,7 @@
   <section id="product">
   <div style="display: flex; justify-content: center; align-items: center; width: 100%; padding: 40px;">
 
-    <!-- Left side: Image -->
+   
     <div style="flex: 1; display: flex; justify-content: center;">
       <img src="ffc.png" alt="Fish Farm Cleaner Product" 
            style="max-width: 90%; 
@@ -270,7 +270,7 @@
            background-color:rgb(21, 21, 71); ">
    </div>
     
-    <!-- Right side: Product Overview Text -->
+    
     <div style="flex: 1; text-align: left; padding-left: 40px;">
       <h2 style="font-size: 36px; color: rgb(255, 255, 255); font-family: Arial;">PRODUCT OVERVIEW</h2>
 
@@ -339,8 +339,8 @@
   <div style="text-align: center; padding: 40px;">
     <h2 style="font-size: 40px; color: white; font-family: Arial;">Project Demonstration</h2>
     <br>
-    <video autoplay muted loop controls style="max-width: 70%; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.6);">
-      <source src="video.mp4" type="video/mp4">
+    <video autoplay muted loop controls style="max-width: 100%; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.6);">
+      <source src="vid.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -348,7 +348,7 @@
 
 
 
-  <section id="contacts">Contacts Section</section>
+  <section id="contacts">    </section>
 
 
   <div class="footer">
@@ -364,10 +364,8 @@
     const currentScrollPos = window.pageYOffset;
 
     if (prevScrollPos > currentScrollPos) {
-      // Scrolling up
       navbar.classList.remove('hide');
     } else {
-      // Scrolling down
       navbar.classList.add('hide');
     }
 
